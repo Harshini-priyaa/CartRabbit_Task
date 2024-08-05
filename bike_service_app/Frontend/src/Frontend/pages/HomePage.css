@@ -1,0 +1,50 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #FEFBD8; /* Light background for the homepage */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #987D9A; /* Main navbar color */
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #FEFBD8; /* Light text color */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: #FEFBD8; /* Light text color */
+  text-decoration: none;
+}
+
+.homepage-header {
+  /* background: url('/path/to/your/image.jpg') no-repeat center center; Optional background image */
+  background-size: cover;
+  padding: 5rem 1rem;
+  color: #BB9AB1; /* Soft text color */
+}
+
+.homepage-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.homepage-header p {
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+main {
+  padding: 2rem;
+}
