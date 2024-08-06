@@ -1,57 +1,51 @@
+/* RegisterPage.css */
 .register-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #FEFBD8; /* Light background for the register page */
-  }
-  
-  .register-page h2 {
-    color: #987D9A; /* Main header color */
-    margin-bottom: 1rem;
-  }
-  
-  .register-page form {
-    background-color: #EECEB9; /* Light background for the form */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .register-page form label {
-    display: block;
-    font-weight: bold;
-    color: #987D9A; /* Label color */
-    margin-bottom: 0.5rem;
-  }
-  
-  .register-page form input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #BB9AB1; /* Input border color */
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  .register-page button {
-    background-color: #987D9A; /* Button color */
-    color: #FEFBD8; /* Button text color */
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .register-page button:hover {
-    background-color: #BB9AB1; /* Button hover color */
-  }
-  
-  .error {
-    color: red;
-    margin-bottom: 1rem;
-  }
-  
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left;
+  background-color: #FEFBD8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h2 {
+  text-align: center;
+  color: #987D9A;
+}
+
+.register-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-page label {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.register-page input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.register-page button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #987D9A;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-page button:hover {
+  background-color: #BB9AB1;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

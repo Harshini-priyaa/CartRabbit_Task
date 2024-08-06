@@ -29,7 +29,6 @@
 }
 
 .homepage-header {
-  /* background: url('/path/to/your/image.jpg') no-repeat center center; Optional background image */
   background-size: cover;
   padding: 5rem 1rem;
   color: #BB9AB1; /* Soft text color */
@@ -43,6 +42,28 @@
 .homepage-header p {
   font-size: 1.2rem;
   margin: 1rem 0 0;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-highlight {
+  font-weight: bold;
+  color: #BB9AB1; /* Highlight color */
+}
+
+.about-emphasis {
+  font-style: italic;
+  color: #987D9A; /* Emphasis color */
 }
 
 main {

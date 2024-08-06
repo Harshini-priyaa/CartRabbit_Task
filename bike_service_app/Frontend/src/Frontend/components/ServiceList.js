@@ -1,24 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './ServiceList.css';
 
 const ServiceList = () => {
   const [services, setServices] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchServices = async () => {
-      const { data } = await axios.get('/api/services');
-      setServices(data);
+      try {
+        const response = await axios.get('http://localhost:5000/api/services');
+        setServices(response.data);
+      } catch (error) {
+        setError(error);
+      }
     };
 
     fetchServices();
   }, []);
 
+  if (error) {
+    return <div>Error fetching services: {error.message}</div>;
+  }
+
   return (
-    <div>
-      <h2>Services</h2>
+    <div className="service-list">
+      <h2>Our Services</h2>
       <ul>
         {services.map((service) => (
-          <li key={service._id}>{service.name}</li>
+          <li key={service.id}>
+            <Link to={`/${service.name.toLowerCase().replace(/\s+/g, '-')}`}>
+              {service.name}
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
